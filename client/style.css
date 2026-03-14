@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+#lobby {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 100;
+}
+#healthBar, #shieldBar {
+    position: absolute;
+    left: 20px;
+    width: 200px;
+    height: 20px;
+    background: #333;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#healthBar {
+    bottom: 60px;
+}
+#shieldBar {
+    bottom: 30px;
+}
+#healthFill {
+    height: 100%;
+    width: 100%;
+    background: #e74c3c;
+}
+#shieldFill {
+    height: 100%;
+    width: 50%;
+    background: #3498db;
+}
+#weaponPanel {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+#ammo {
+    font-size: 1.2em;
+    color: #f1c40f;
+}
+#buildingPanel {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+.build-piece {
+    padding: 10px 20px;
+    background: #2c3e50;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.build-piece.selected {
+    background: #e67e22;
+    border-color: #f39c12;
+}
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    pointer-events: none;
+}
+#settingsMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.9);
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 200;
+}
